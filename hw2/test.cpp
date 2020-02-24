@@ -4,8 +4,8 @@
 #include <stdlib.h>
 
 void sig_handler(int sig, siginfo_t *si, void *arg) {
-	if(sig != SIGFPE) {
-		printf("This handler can only be used with SIGFPE\n");
+	if(sig != SIGFPE || si->si_code != FPE_INTDIV) {
+		printf("This handler can only be used with SIGFPE caused by division by zero\n");
 		exit(0);
 	}
 	ucontext_t *ctx = (ucontext_t *)arg;
