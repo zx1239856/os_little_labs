@@ -1,5 +1,8 @@
 # Buddy System Memory Allocator
-Usage:
+## Note:
+Please refer to Tsinghua Git: https://git.tsinghua.edu.cn/xiang-zh17/os-little-labs/tree/35a188a9/hw3
+
+## Usage:
 ```bash
 python3 ostep3-malloc.py -S 100 -b 1000 -a 4 -p BUDDY -c -A +12,+60,+8,+3,+1,-4,-3,+7,-0,-1,+9,+20,+50,-2,-5,-6,-7,-8
 ```
