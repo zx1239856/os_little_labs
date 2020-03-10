@@ -1,0 +1,2 @@
+# Self-mapping Page Table
+Assume that the base address, in the form of (higher 10 bits, mid 10 bits, lower 12 bits), of page directory is `(e, x, 0)`, and thus the page directory would be the e-th element in the 4MB page table area. Then we must have `e==x`, i.e. `(e, e, 0)`. The self-mapping one is the e-th element in the page directory, so its address should be `(e, e, 4e)`. For page area starting from `0xD0000000`, `e=0x340`, and the fixed point should be `0xD0340D00`.
