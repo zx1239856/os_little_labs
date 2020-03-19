@@ -7,3 +7,4 @@
 + hw6: self-mapping page table
 + hw7: lru-k
 
++ hw8: process scheduler
